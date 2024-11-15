@@ -16,7 +16,7 @@ public class UserReader {
             while (bufferedReader.readLine()!=null)
             {
                 String[] details=line.split(",");
-                users.add(new User(details[0],details[1],details[2],details[3],UserType.details[4]))
+                users.add(new User(details[0],details[1],details[2],UserType.valueOf(details[3].toUpperCase())));
             }
         }
         catch (IOException e)
