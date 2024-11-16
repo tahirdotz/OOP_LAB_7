@@ -1,6 +1,14 @@
 import java.io.*;
 
 public class UserWriter {
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
     private String fileName;
 
     public UserWriter(String fileName) {
